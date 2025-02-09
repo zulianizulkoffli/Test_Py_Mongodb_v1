@@ -57,4 +57,5 @@ with st.form("student_form"):
         new_student = {"name": name, "age": age, "course": course}
         collection.insert_one(new_student)
         st.success(f"🎉 {name} has been added!")
-        st.experimental_rerun()  # Refresh after adding data
+        st.rerun()  # Refresh after adding data
+
